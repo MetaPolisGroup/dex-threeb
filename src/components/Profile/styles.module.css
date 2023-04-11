@@ -1,0 +1,457 @@
+.transactionWrapper {
+  max-width: 1200px;
+  margin: 30px auto !important;
+  text-align: center;
+  padding: 0 15px;
+  flex: 1;
+}
+
+.table :global(table) {
+  background-color: #f3f3f3;
+  border-spacing: 0 1rem !important;
+  border-collapse: separate;
+}
+
+.table :global(table tr td.ant-table-cell:first-child) {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.table :global(table tr td.ant-table-cell:last-child) {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* .table :global(.ant-table) {
+  overflow-x: auto;
+} */
+
+.table :global(.ant-table-thead) {
+  background: transparent;
+}
+
+.table :global(.ant-table-thead .ant-table-cell) {
+  background: #f3f3f3;
+  border-top-left-radius: unset;
+  font-weight: 700;
+  color: #000;
+}
+
+.table :global(.ant-table-thead .ant-table-cell::before) {
+  content: unset !important;
+}
+
+.table :global(.ant-table-tbody) {
+  background: #fff;
+}
+
+.table :global(.ant-table-row) {
+  border-radius: 20px;
+}
+
+.table :global(.ant-table-row:hover .ant-table-cell) {
+  background: #fff;
+}
+
+.table :global(.ant-table-cell > *) {
+  color: #000000 !important;
+}
+
+.table :global(.ant-tag) {
+  font-size: 14px;
+  border-radius: 8px;
+  padding: 7px 25px;
+  font-weight: 700;
+  text-transform: lowercase;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.table :global(.ant-tag::first-letter) {
+  text-transform: uppercase;
+}
+
+.table :global(.ant-tag.tag-Buy),
+.table :global(.ant-tag.tag-Sell) {
+  background: -webkit-linear-gradient(#fea013, #fea013);
+  background-color: transparent !important;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 1px solid #fea013;
+}
+
+.table :global(.ant-tag.tag-Waiting) {
+  background: -webkit-linear-gradient(#b5473a, #b5473a);
+  background-color: transparent !important;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 1px solid #b5473a;
+  width: 120px;
+  text-align: center;
+}
+
+.table :global(.ant-tag.tag-Confirmed) {
+  background: -webkit-linear-gradient(#36a920, #36a920);
+  background-color: transparent !important;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 1px solid #36a920;
+  width: 120px;
+  text-align: center;
+}
+
+.statusCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 10px;
+}
+
+.resPrice {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 5;
+}
+
+.button:global(.ant-btn) {
+  width: 100%;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* button update */
+
+:global(.ant-btn).btnUpdate:focus,
+:global(.ant-btn).btnUpdate:active,
+:global(.ant-btn).btnUpdate:hover,
+.btnUpdate:global(.ant-btn) {
+  width: 100% !important;
+  border-radius: 12px !important;
+  background: linear-gradient(to bottom, #fea013, #fea013) !important;
+  border: none !important;
+  font-weight: bold !important;
+  color: #ffffff !important;
+}
+
+:global(.ant-btn).btnUpdate:hover {
+  width: auto;
+  font-weight: bold;
+  box-shadow: rgb(4 17 29 / 25%) 0px 0px 10px 0px;
+}
+/* button upload */
+
+.btnAvatar:focus,
+.btnAvatar:active,
+.btnAvatar:hover,
+.btnAvatar {
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to bottom, #fea013, #fea013) !important;
+  border: 1px solid transparent;
+  color: #000000;
+  font-family: "GILROY ";
+}
+
+.btnAvatar:hover {
+  background: linear-gradient(to bottom, #fea013, #fea013) !important;
+  color: white;
+  border: none;
+}
+
+/* profile input*/
+
+.card1 {
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+}
+.header {
+  text-align: center;
+}
+.input {
+  width: 400px;
+  outline: none;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  appearance: "textfield";
+  color: #041836;
+  font-weight: 700;
+  border: none;
+  background-color: transparent;
+}
+.select {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.textWrapper {
+  max-width: 80px;
+  width: 100%;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: row;
+}
+
+/* form avatar */
+.rowLabel {
+  margin-left: -12px !important;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 600;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.card {
+  box-shadow: 0 0.5rem 1.2rem rgb(189 197 209 / 20%);
+  border: 1px solid #e7eaf3;
+  border-radius: 1rem !important;
+  width: 450px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 2rem 0 2rem 0 !important;
+  min-height: 800px;
+}
+.label {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  width: auto;
+  border-radius: 8px;
+  /* background: black; */
+}
+.label:hover {
+  background: linear-gradient(to bottom, #fea013, #fea013) !important;
+  color: #fff;
+}
+
+/* Referral System */
+.box {
+  padding: 10px;
+  height: 42px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+.addressBox {
+  background: #ffffff;
+  border: 2px solid #fea013;
+}
+
+.infoTotalBox {
+  background: #fea013;
+  border: 2px solid #fea013;
+  color: #fff;
+}
+
+.infoCommissionlBox {
+  background: #8578ff;
+  border: 2px solid #8578ff;
+  color: #fff;
+  font-weight: bold;
+}
+
+.tree {
+  overflow: auto;
+}
+
+.referralNode :global(.ant-tree-node-content-wrapper),
+.referralNode :global(.ant-tree-treenode) {
+  width: 100%;
+}
+
+.referralNode :global(.ant-tree-switcher-leaf-line::after) {
+  height: 21px !important;
+  border-bottom: 2px solid #2d2d72;
+}
+
+.referralNode
+  :global(.ant-tree-treenode-leaf-last .ant-tree-switcher-leaf-line::before) {
+  height: 21px !important;
+  border-right: 2px solid #2d2d72;
+}
+
+.referralNode :global(.ant-tree-switcher-leaf-line::before) {
+  /* height: 21px !important; */
+  border-right: 2px solid #2d2d72;
+  bottom: -10px;
+}
+.referralNode :global(.ant-tree-node-content-wrapper) {
+  padding: 0px !important;
+}
+.referralNode :global(.ant-tree-treenode) {
+  padding: 0 0 10px 0 !important;
+}
+
+.referralNode :global(.ant-tree-indent-unit::before) {
+  border-right: 2px solid #2d2d72;
+  bottom: -10px;
+}
+
+.nodeBox {
+  border: 2px solid #2d2d72;
+  padding: 0;
+}
+
+.nodeLeft {
+  padding: 10px;
+}
+
+.nodeRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2d2d72;
+  height: 100%;
+  width: 100%;
+  padding-left: 7px;
+  color: #fff;
+}
+
+.referralTitle {
+  font-weight: bold;
+  text-align: center;
+  color: #fea013;
+  width: 100%;
+  font-size: 20px;
+}
+
+.btnBack {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  color: #fea013;
+  cursor: pointer;
+}
+
+.iconCopy {
+  width: 22px;
+  height: 22px;
+  background: #fea013;
+  padding: 8px;
+  position: absolute;
+  right: 8px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px 0px;
+  cursor: pointer;
+}
+@media screen and (max-width: 575px) {
+  .card {
+    width: calc(100% - 16px);
+  }
+  .table :global(.ant-table-thead) {
+    display: none;
+  }
+
+  .table :global(.ant-table-cell) {
+    padding: 8px 0 8px 8px !important;
+  }
+
+  .table :global(.ant-card-meta-title) {
+    font-size: 14px;
+    margin-bottom: 5px !important;
+  }
+
+  .table :global(.ant-card-meta-description) {
+    font-size: 12px;
+  }
+
+  .table :global(.ant-tag) {
+    font-size: 10px;
+    padding: 2px 8px;
+    margin-right: 2px;
+  }
+
+  .table :global(.ant-tag.tag-Waiting),
+  .table :global(.ant-tag.tag-Confirmed) {
+    width: 80px;
+  }
+
+  .transactionWrapper {
+    margin: 20px auto !important;
+  }
+  .box {
+    height: 44px;
+  }
+}
+
+@media only screen and (min-width: 370px) and (max-width: 400px) {
+  .table :global(.ant-table-cell) {
+    padding: 8px 0 8px 2px !important;
+  }
+  :global(.ant-card-meta-avatar) {
+    padding-right: 5px !important;
+  }
+
+  .card {
+    box-shadow: 0 0.5rem 1.2rem rgb(189 197 209 / 20%);
+    border: 1px solid #e7eaf3;
+    border-radius: 1rem;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .label {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    width: auto;
+    font-size: 9px !important;
+  }
+  .box {
+    height: 44px;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 370px) {
+  .card {
+    box-shadow: 0 0.5rem 1.2rem rgb(189 197 209 / 20%);
+    border: 1px solid #e7eaf3;
+    border-radius: 1rem;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 10px !important;
+  }
+  .label {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 3px;
+    cursor: pointer;
+    width: auto;
+    font-size: 8.5px !important;
+  }
+  .box {
+    height: 45px;
+  }
+
+  .nodeLeft {
+    padding: 2px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .box {
+    font-size: 14px;
+  }
+}
