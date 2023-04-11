@@ -22,10 +22,10 @@ const gamePaths = [
 
 const dexPaths = [
   "/dex",
-  // "/dex/transfers",
-  // "/dex/balances",
-  // "/dex/fiat",
-  // "/dex/transactions",
+  "/dex/transfers",
+  "/dex/balances",
+  "/dex/fiat",
+  "/dex/transactions",
 ];
 
 const RoutingMenu = ({ isOpen, visileSubMenu, setVisileSubMenu }) => {
@@ -171,7 +171,7 @@ const RoutingMenu = ({ isOpen, visileSubMenu, setVisileSubMenu }) => {
                       DEX
                     </Link>
                   </Menu.Item>
-                  {/* <Menu.Item className={styles.btnMenu} key="transfers">
+                  <Menu.Item className={styles.btnMenu} key="transfers">
                     <Link to="/dex/transfers" className={styles.menuLink}>
                       Transfer
                     </Link>
@@ -185,7 +185,7 @@ const RoutingMenu = ({ isOpen, visileSubMenu, setVisileSubMenu }) => {
                     <Link to="/dex/transactions" className={styles.menuLink}>
                       Transactions
                     </Link>
-                  </Menu.Item> */}
+                  </Menu.Item>
                 </Menu>
                 {/* <div className={styles.walletInfo}>
                   <div

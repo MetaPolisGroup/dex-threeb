@@ -191,9 +191,9 @@ function MainHeader() {
                         </div>
                       </a>
 
-                      {md && routePage === "dex" && (
+                      {/* {md && routePage === "dex" && (
                         <Dot className={styles.topMenuIconDot} />
-                      )}
+                      )} */}
                     </div>
                   )}
 
