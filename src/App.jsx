@@ -228,9 +228,7 @@ const App = ({ isServerInfo }) => {
               <Game />
             </Route>
             <Route path="/">
-              <Redirect
-                to={`/collection/${Constants.contracts.MARKETPLACE_ADDRESS}`}
-              />
+              <Redirect to={`/dex`} />
             </Route>
             <Route path="/ethereum-boilerplate">
               <Redirect to="/gamify" />
