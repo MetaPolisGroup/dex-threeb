@@ -114,7 +114,7 @@ const RoutingMenu = ({ isOpen, visileSubMenu, setVisileSubMenu }) => {
                   className={styles.walletInfo}
                   style={{ marginLeft: "10px" }}
                 >
-                  <Account />
+                  {/* <Account /> */}
                 </div>
               </div>
             </div>
@@ -195,14 +195,14 @@ const RoutingMenu = ({ isOpen, visileSubMenu, setVisileSubMenu }) => {
                     <UserIcon className={styles.svgIcon1} />
                   </div>
                 </div> */}
-                {md && (
+                {/* {md && (
                   <div
                     className={styles.walletInfo}
                     style={{ marginLeft: "10px" }}
                   >
                     <Account />
                   </div>
-                )}
+                )} */}
               </div>
             </div>
           </div>

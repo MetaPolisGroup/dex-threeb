@@ -5,15 +5,16 @@ import { useChain, useMoralis } from "react-moralis";
 import { Link, useLocation } from "react-router-dom";
 import { AvaxLogo, BSCLogo, ETHLogo, PolygonLogo } from "../Chains/Logos";
 import { HambugerBar } from "./IconHeader";
-import RoutingMenu from "./RoutingMenu";
+// import RoutingMenu from "./RoutingMenu";
 import styles from "./styles.module.css";
-import { Dot } from "./TopMenuItem";
-import logoManahubsStaking from "./Logo_Staking.svg";
+// import { Dot } from "./TopMenuItem";
+// import logoManahubsStaking from "./Logo_Staking.svg";
 import logoManahubsDex from "./logo_ThreeB.svg";
-import logoManahubsMKP from "./Logo_MKP.svg";
+// import logoManahubsMKP from "./Logo_MKP.svg";
 import DexLogo from "components/Icons/DexLogo";
 // import GameLogo from "components/Icons/GameLogo";
 import MarketplaceLogo from "components/Icons/MarketplaceLogo";
+import Account from "components/Account/Account";
 
 const { Header } = Layout;
 const { useBreakpoint } = Grid;
@@ -187,7 +188,7 @@ function MainHeader() {
                     <div className={styles.topMenuIcon}>
                       <a href="https://nft.threeb.ai/">
                         <div className={styles.topMenuIcon}>
-                          <img src={logoManahubsDex} />
+                          <img src={logoManahubsDex} alt="Logo ThreeB" />
                         </div>
                       </a>
 
@@ -195,6 +196,37 @@ function MainHeader() {
                         <Dot className={styles.topMenuIconDot} />
                       )} */}
                     </div>
+                  )}
+
+                  {md && (
+                    <>
+                      <div className={styles.topMenuIcon}>
+                        <Link to="/dex" className={styles.menuLink}>
+                          DEX
+                        </Link>
+                      </div>
+
+                      <div className={styles.topMenuIcon}>
+                        <Link to="/dex/transfers" className={styles.menuLink}>
+                          Transfer
+                        </Link>
+                      </div>
+
+                      <div className={styles.topMenuIcon}>
+                        <Link to="/dex/balances" className={styles.menuLink}>
+                          Balances
+                        </Link>
+                      </div>
+
+                      <div className={styles.topMenuIcon}>
+                        <Link
+                          to="/dex/transactions"
+                          className={styles.menuLink}
+                        >
+                          Transactions
+                        </Link>
+                      </div>
+                    </>
                   )}
 
                   {/* {(md || routePage === "staking") && (
@@ -214,7 +246,7 @@ function MainHeader() {
               </div>
             </Col>
             <Col xs={10} sm={10} md={4} lg={5}>
-              <div>
+              <div className={styles.navRight}>
                 <Dropdown
                   overlay={menu}
                   className={styles.dropdown}
@@ -233,16 +265,22 @@ function MainHeader() {
                     </span>
                   </Button>
                 </Dropdown>
+                <div
+                  className={styles.walletInfo}
+                  style={{ marginLeft: "10px" }}
+                >
+                  <Account />
+                </div>
               </div>
             </Col>
           </div>
         </Row>
 
-        <RoutingMenu
+        {/* <RoutingMenu
           isOpen={isOpen}
           setVisileSubMenu={setVisileSubMenu}
           visileSubMenu={visileSubMenu}
-        />
+        /> */}
 
         {!md && visileSubMenu && (
           <div className={styles.subMenuMobile}>

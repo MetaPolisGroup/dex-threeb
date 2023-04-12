@@ -25,7 +25,7 @@
   align-items: center;
   justify-content: space-between;
   max-width: 1200px;
-  padding: 45px 15px;
+  padding: 10px 15px;
   margin: 0 auto;
 }
 
@@ -244,6 +244,18 @@ a.menuLink,
 :global(.ant-menu-horizontal > .ant-menu-item-selected) a.menuLink:hover,
 :global(.ant-menu-horizontal > .ant-menu-item-selected) a.menuLink {
   color: #fff !important;
+  cursor: pointer !important;
+}
+
+.menuLink {
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer !important;
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
 }
 
 /* :global(.ant-menu-item) a.menuLink:hover,
