@@ -24,7 +24,7 @@ import { MdMail } from "react-icons/md";
 import { useLocation } from "react-router-dom";
 import styles from "./styles.module.css";
 import React, { useMemo } from "react";
-import logoManahubs from "./logo_ThreeB.svg";
+import logoThreeB from "./logo_ThreeB.svg";
 
 const { Title } = Typography;
 const { Footer } = Layout;
@@ -236,12 +236,9 @@ const MainFooter = () => {
       <div className={styles.container}>
         <Row className={styles.bottomFooter} justify="space-between">
           <Col>
-            <a
-              href="https://manahubs.com/home-nft-market"
-              rel="noopener noreferrer"
-            >
+            <a href="https://www.threeb.ai/" rel="noopener noreferrer">
               <img
-                src={logoManahubs}
+                src={logoThreeB}
                 alt="logo footer"
                 className={styles.footerLogo}
                 width={200}
